@@ -4,7 +4,7 @@
         "brand": "Adidas",
         "price": 20.99,
         "image": "https://m.media-amazon.com/images/I/71F-nTsDyuL._AC_SX385_.jpg",
-        "fit-type": "Semi-fitted",
+        "fit": "Semi-fitted",
         "material": "97% Polyester, 3% spandex",
         "id": 0
     },
@@ -13,7 +13,7 @@
         "brand": "ACCFOD",
         "price": 9.99,
         "image": "https://m.media-amazon.com/images/I/71NIgNiBxeL._AC_SX385_.jpg",
-        "fit-type": "Low cut",
+        "fit": "Low cut",
         "material": "Cotton",
         "id": 1
     },
@@ -22,7 +22,7 @@
         "brand": "Hanes",
         "price": 14.98,
         "image": "https://m.media-amazon.com/images/I/81F6fuBgWPL._AC_SX569_.jpg",
-        "fit-type": "Regular",
+        "fit": "Regular",
         "material": "56% Polyester, 43% Cotton, 1% Spandex",
         "id": 2
     },
@@ -31,7 +31,7 @@
         "brand": "Felicigeely",
         "price": 15.99,
         "image": "https://m.media-amazon.com/images/I/81NlMinR6vL._AC_SX569_.jpg",
-        "fit-type": "Low Cut Ankle",
+        "fit": "Low Cut Ankle",
         "material": "Polyester, Spandex",
         "id": 3
     },
@@ -40,7 +40,7 @@
         "brand": "GOLDTOE",
         "price": 14.50,
         "image": "https://m.media-amazon.com/images/I/81yp8ZpAxpL._AC_SX569_.jpg",
-        "fit-type": "Sport",
+        "fit": "Sport",
         "material": "81% Cotton, 18% Nylon, 1% Spandex",
         "id": 4
     },
@@ -49,7 +49,7 @@
         "brand": "Saucony",
         "price": 16.05,
         "image": "https://m.media-amazon.com/images/I/61lxpudqRpL._AC_SX679_.jpg",
-        "fit-type": "Ventilating Comfort",
+        "fit": "Ventilating Comfort",
         "material": "98% Polyester, 2% Spandex",
         "id": 5
     }

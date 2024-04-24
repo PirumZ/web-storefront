@@ -3,6 +3,7 @@ import mySocks from "./Socks.json";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
+import { useState } from "react";
 
 export default function SockList() {
     const [socks, setSocks] = useState(mySocks);
@@ -18,7 +19,7 @@ export default function SockList() {
                         name = {sock.name}
                         brand = {sock.brand}
                         price = {sock.price}
-                        fit = {sock.fit-type}
+                        fit = {sock.fit}
                         material = {sock.material}
                         />
                     </Col>
