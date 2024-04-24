@@ -10,6 +10,7 @@ export default function SockList() {
 
     return (
         <Container className="mt-4 ms-4">
+        <h2>God, I'm so good at web design</h2>
             <div className="sock-list">
                 <Row>
                     {socks.map((sock) => (
@@ -21,6 +22,7 @@ export default function SockList() {
                         price = {sock.price}
                         fit = {sock.fit}
                         material = {sock.material}
+                        image = {sock.image}
                         />
                     </Col>
                     ))}

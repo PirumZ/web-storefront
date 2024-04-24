@@ -5,6 +5,9 @@ import "./Sock.css";
 export default function Sock(props) {
   return (
     <div className="sock">
+    <div className="image">
+      <img src={props.image} alt="It's socks" width="20%" height="30%"></img>
+    </div>
       <div className="sock-name">
         {props.brand} {props.name}
       </div>
