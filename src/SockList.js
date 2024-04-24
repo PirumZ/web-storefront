@@ -6,7 +6,7 @@ import Container from "react-bootstrap/Container";
 import { useState } from "react";
 
 export default function SockList() {
-    const [socks, setSocks] = useState(mySocks);
+    const [socks/*, setSocks*/] = useState(mySocks);
 
     return (
         <Container className="mt-4 ms-4">
