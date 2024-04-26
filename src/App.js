@@ -21,7 +21,6 @@ function App() {
           <Route path="/checkout" element={<CheckoutPage />} />
         </Routes>
       </Router>
-      <LandingPage />
     </div>
   );
 }

@@ -7,7 +7,7 @@ export default function NavigationBar() {
   return (
     <Navbar bg="dark" variant="dark" expand="md" sticky="top">
       <Container>
-        <Navbar.Brand href="/landing">Just Socks, That's it</Navbar.Brand>
+        <Navbar.Brand href="/">Just Socks, That's it</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
