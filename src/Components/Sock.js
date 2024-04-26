@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "react-bootstrap";
-import "./Sock.css";
+import "../Sock.css";
 
 export default function Sock(props) {
   return (
