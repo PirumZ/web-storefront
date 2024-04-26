@@ -45,13 +45,49 @@
         "id": 4
     },
     {
-        "name": "Men's Multi-Pack Mesh Performance No-Show Socks",
-        "brand": "Saucony",
-        "price": 16.05,
-        "image": "https://m.media-amazon.com/images/I/61lxpudqRpL._AC_SX679_.jpg",
-        "fit": "Ventilating Comfort",
-        "material": "98% Polyester, 2% Spandex",
+        "name": "Performance Tech No Show Socks, Multipliers",
+        "brand": "Under Armour",
+        "price": 13.57,
+        "image": "https://m.media-amazon.com/images/I/81O-tGaIa+L._AC_SX569_.jpg",
+        "fit": "Heel fitted",
+        "material": "69% Polyester, 28% Cotton, 3% Spandex",
         "id": 5
+    },
+    {
+        "name": "Men's Low Cut Socks",
+        "brand": "PUMA",
+        "price": 12.83,
+        "image": "https://m.media-amazon.com/images/I/81G8PCAxzML._AC_SX569_.jpg",
+        "fit": "Low Cut",
+        "material": "98% Polyester, 2% Spandex",
+        "id": 6
+    },
+    {
+        "name": "Ankle Compression Sock for Men and Women 2/4/6 Pairs, Low Cut Compression Running Sock with Ankle Support",
+        "brand": "PAPLUS",
+        "price": 16.99,
+        "image": "https://m.media-amazon.com/images/I/81LbbHEImmL._AC_SX569_.jpg",
+        "fit": "Regular",
+        "material": "Nylon & Spandex",
+        "id": 7
+    },
+    {
+        "name": "Men's Dri-tech Moisture Control Quarter Socks (6 Pairs)",
+        "brand": "Dickies",
+        "price": 14.00,
+        "image": "https://m.media-amazon.com/images/I/91Q3l8onAmS._AC_SX679_.jpg",
+        "fit": "Quarter",
+        "material": "70% Cotton, 28% Polyester, 2% Spandex",
+        "id": 8
+    },
+    {
+        "name": "6 Pack Men's Running Ankle Socks with Cushion, Low Cut Athletic Tab Socks",
+        "brand": "CELERSPORT",
+        "price": 17.99,
+        "image": "https://m.media-amazon.com/images/I/812kzIlWvuL._AC_SX569_.jpg",
+        "fit": "Ankle",
+        "material": "63.3% Combed Cotton, 21.5% Nylon, 13.8% Polyester, 1.4% Spandex",
+        "id": 9
     }
     
 ]
