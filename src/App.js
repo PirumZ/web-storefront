@@ -4,7 +4,7 @@ import CartPage from "./Pages/Cart";
 import ProductPage from "./Pages/Products";
 import CheckoutPage from "./Pages/Checkout";
 import "./App.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NavigationBar from "./Components/NavBar";
 
 /*App function depicting the movielist to the screen utilizing BS
@@ -12,7 +12,7 @@ for responsiveness, along with some imports from BS.*/
 function App() {
   return (
     <div className="App">
-      <Router>
+      <BrowserRouter>
         <NavigationBar />
         <Routes>
           <Route path="/" element={<LandingPage />} />
@@ -20,7 +20,7 @@ function App() {
           <Route path="/cart" element={<CartPage />} />
           <Route path="/checkout" element={<CheckoutPage />} />
         </Routes>
-      </Router>
+      </BrowserRouter>
     </div>
   );
 }

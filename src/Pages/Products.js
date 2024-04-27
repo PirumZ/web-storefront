@@ -10,7 +10,7 @@ export default function ProductPage() {
 
   return (
     <Container fluid="lg" className="mt-4">
-      <h2>Temp Placement1</h2>
+      <h2>Our Sock Selection</h2>
       <div className="sock-list">
         <Row>
           {socks.map((sock) => (
