@@ -1,5 +1,5 @@
-import Container from "react-bootstrap/Container";
-
+//import Container from "react-bootstrap/Container";
+import CheckoutForm from "../Components/CheckoutForm";
 export default function CheckoutPage() {
 
   return (
