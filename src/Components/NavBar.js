@@ -7,17 +7,16 @@ export default function NavigationBar() {
   return (
     <Navbar bg="dark" variant="dark" expand="md" sticky="top">
       <Container>
-        <Navbar.Brand href="/">Just Socks, That's it</Navbar.Brand>
+        <Navbar.Brand to="/">Just Socks, That's it</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="/products">Products</Nav.Link>
-            <Nav.Link href="/cart">Shopping Cart</Nav.Link>
-            <Nav.Link href="/checkout">Checkout</Nav.Link>
+            <Link to="/products">Products</Link>
+            <Link to="/cart">Shopping Cart</Link>
+            <Link to="/checkout">Checkout</Link>
             </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>
   );
 }
-
