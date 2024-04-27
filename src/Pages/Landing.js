@@ -7,7 +7,7 @@ import mySockSale from "../Components/SocksSale.json"
 
 export default function LandingPage() {
 
-   const [socksale] = useState(mySockSale);
+  const [socksale] = useState(mySockSale);
 
 
   return (
