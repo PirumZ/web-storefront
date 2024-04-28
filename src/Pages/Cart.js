@@ -1,12 +1,13 @@
-//import Container from "react-bootstrap/Container";
-//import ProductCart from "../Components/ProductCart";
+/*import Container from "react-bootstrap/Container";
+import ProductCart from "../Components/ProductCart";
 import React from 'react';
 import ShoppingCart from '../Components/ShoppingCart';
 
 export default function CartPage() {
 
   return (
-    /*<Container fluid="lg" className="mt-4">
+    <div>
+    <Container fluid="lg" className="mt-4">
       <h2>Shopping Cart</h2>
       <ul>
         {socks.map(sock => (
@@ -21,12 +22,13 @@ export default function CartPage() {
           </li>
         ))}
       </ul>
-    </Container> */
+    </Container> 
     
     // Will call the shopping chart to display items
     <div>
       <h2>Shopping Cart</h2>
       <ShoppingCart />
     </div>
+    </div>
   );
-}
+}*/

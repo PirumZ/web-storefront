@@ -1,5 +1,5 @@
 import React, { /*useEffect*/ } from "react";
-import socksData from '../Components/RegularSocks.json';
+import socksData from '../Components/JSONs/RegularSocks.json';
 
 export default function ShoppingCart() {
     
