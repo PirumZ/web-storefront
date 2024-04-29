@@ -7,13 +7,13 @@ export default function ShoppingCart() {
     // Fetch items from JSON file or any other source
     const [cartItems, setCartItems] = useState(socksData);
 
-    // Function to remove an item from the cart
+    // Removes an item from the cart
     const removeFromCart = (sockId) => {
         const updatedCartItems = cartItems.filter(sock => sock.id !== sockId);
         setCartItems(updatedCartItems);
     };
 
-    // Function to update the quantity of an item in the cart
+    // Updates the quantity of an item in the cart
     const updateQuantity = (sockId, newQuantity) => {
         const updatedCartItems = cartItems.map(sock => {
             if (sock.id === sockId) {
