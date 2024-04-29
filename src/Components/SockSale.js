@@ -4,6 +4,8 @@ import "../Sock.css";
 
 export default function SockSale(props) {
   return (
+    // Pretty basic component designating the layout of all of the sale socks
+    // utilizes props to import data from JSONs
     <div className="sock">
       <div className="image">
         <img src={props.image} alt="It's socks" width="20%" height="30%"></img>
@@ -21,6 +23,7 @@ export default function SockSale(props) {
         <b>Price: </b>
         <s>${props.price}</s> ${props.pricesale}
       </div>
+      {/*Button designed to add said item to the shopping cart*/}
       <Button className="btn btn-primary">Add to Cart</Button>
     </div>
   );

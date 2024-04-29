@@ -1,41 +1,34 @@
 import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
-import { useState } from "react";
-import SockSale from "../Components/SockSale"
-import mySockSale from "../Components/JSONs/SocksSale.json"
+import SockSale from "../Components/SockSale";
+import mySockSale from "../Components/JSONs/SocksSale.json";
 import "bootstrap/dist/css/bootstrap.min.css";
-import PageButton from "../Components/PageButton";
-
-
 
 export default function SaleList() {
+  // Creating a constant for JSON object
 
-  const [socksale] = useState(mySockSale);
-
+  const socksale = mySockSale;
 
   return (
+    // Container linking the JSON elements to be used in the Sock component
+    // More specifically, this was designed for the socks on sale on the landing page
     <div className="sock-list">
-        <h2>We Sell Socks Here. I hope you like 'em.</h2>
-        <h3>While you're here, take a look at some of our sale items. :)</h3>
-        <PageButton />
-    <Container fluid="lg" className="mt-4">
+      <Container fluid="lg" className="mt-4">
         <Row lg={4} className="justify-content-center">
-            
-            {socksale.map((socksale) => (
-              <SockSale
-                key={socksale.id}
-                name={socksale.name}
-                brand={socksale.brand}
-                price={socksale.price}
-                pricesale={socksale.pricesale}
-                fit={socksale.fit}
-                material={socksale.material}
-                image={socksale.image}
-              />
+          {socksale.map((socksale) => (
+            <SockSale
+              key={socksale.id}
+              name={socksale.name}
+              brand={socksale.brand}
+              price={socksale.price}
+              pricesale={socksale.pricesale}
+              fit={socksale.fit}
+              material={socksale.material}
+              image={socksale.image}
+            />
           ))}
-            
         </Row>
-    </Container>
+      </Container>
     </div>
   );
 }
