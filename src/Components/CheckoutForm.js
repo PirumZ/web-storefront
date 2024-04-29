@@ -29,28 +29,28 @@ export default function CheckoutForm() {
     <form>
       {/* Payment method */}
       <label>Payment Method:</label>
-      <select>
+      <select name="paymentMethod" onChange={handleFormChange}>
         <option value="credit">Credit Card</option>
         <option value="paypal">PayPal</option>
       </select>
 
       {/* Shipping method */}
       <label>Shipping Method:</label>
-      <select>
+      <select shippingMethod onChange={handleFormChange}>
         <option value="standard">Standard Shipping</option>
         <option value="express">Express Shipping</option>
       </select>
 
       {/* Billing address */}
       <label>Billing Address:</label>
-      <input type="text" />
+      <input type="text" name="billingAddress" onChange={handleFormChange} />
 
       {/* Shipping address */}
       <label>Shipping Address:</label>
-      <input type="text" />
+      <input type="text" name="shippingAddress" onChange={handleFormChange} />
 
       {/* Total after taxes */}
-      <p>Total (including 6% tax): $0.00</p>
+      <p>Total (including 6% tax): ${calculateTotal().toFixed(2)}</p>
 
       {/* Checkout button */}
       <button type="submit">Checkout</button>
