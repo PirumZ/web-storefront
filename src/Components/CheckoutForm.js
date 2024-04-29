@@ -52,6 +52,18 @@ export default function CheckoutForm() {
       {/* Total after taxes */}
       <p>Total (including 6% tax): ${calculateTotal().toFixed(2)}</p>
 
+      {/* Invoice Section */}
+        <div>
+          <h3>Invoice</h3>
+          <p>Payment Method: {formData.paymentMethod}</p>
+          <p>Shipping Method: {formData.shippingMethod}</p>
+          <p>Billing Address: {formData.billingAddress}</p>
+          <p>Shipping Address: {formData.shippingAddress}</p>
+          <p>Subtotal: ${formData.subtotal.toFixed(2)}</p>
+          <p>Tax (6%): ${(formData.subtotal * 0.06).toFixed(2)}</p>
+          <p>Total: ${calculateTotal().toFixed(2)}</p>
+        </div>
+  
       {/* Checkout button */}
       <button type="submit">Checkout</button>
     </form>
