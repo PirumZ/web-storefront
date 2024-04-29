@@ -1,0 +1,111 @@
+[
+    {
+        "name": "Men's All Purpose Cushion Crew Socks (6 Pairs)",
+        "brand": "Dickies",
+        "price": 11.99,
+        "image": "https://m.media-amazon.com/images/I/91ChmTMh2DL._AC_SX679_.jpg",
+        "fit": "Crew Cut",
+        "material": "79% Cotton, 19% Polyester, 1% Nylon, 1% Spandex",
+        "id": 16
+    },
+    {
+        "name": "No Show Socks Women Low Socks Non Slip Flat Boat Line, 8 Pairs",
+        "brand": "Wernies",
+        "price": 16.89,
+        "image": "https://m.media-amazon.com/images/I/81u0YoxJdVL._AC_SX679_.jpg",
+        "fit": "Low Fit",
+        "material": "Cotton",
+        "id": 17
+    },
+    {
+        "name": "Organic Cotton Ragg Socks - 1 Pair - Unisex",
+        "brand": "Maggies Organic",
+        "price": 15.99,
+        "image": "https://m.media-amazon.com/images/I/610NGCY77lL._AC_SX679_.jpg",
+        "fit": "Comfy",
+        "material": "88.3% Cotton, 11.3% Nylon, 0.4% Spandex",
+        "id": 18
+    },
+    {
+        "name": "Elite Cushioned Compression Mid-crew Socks 4-Pack",
+        "brand": "SITOISBE",
+        "price": 25.99,
+        "image": "https://m.media-amazon.com/images/I/81702ZzMniL._AC_SX679_.jpg",
+        "fit": "Mid Cut",
+        "material": "59% Nylon, 16% Elastane, 13% Combed Cotton, 12% Polyester",
+        "id": 19
+    },
+    {
+        "name": "Mens No Show Socks Cotton Low Cut Short Casual Socks Men With Non-Slip Grips",
+        "brand": "JORMATT",
+        "price": 14.99,
+        "image": "https://m.media-amazon.com/images/I/81qeUacal9L._AC_SX679_.jpg",
+        "fit": "Low Cut",
+        "material": "92% Cotton, 5% Polyester and, 3% Spandex",
+        "id": 20
+    },
+    {
+        "name": "No Show Socks for Men 8 pack Cotton Thin Low Cut Non Slip for Loafer Flats Sneakers",
+        "brand": "SIXDAYSOX",
+        "price": 17.99,
+        "image": "https://m.media-amazon.com/images/I/71ValgVt8rL._AC_SX679_.jpg",
+        "fit": "Low Cut",
+        "material": "75% Cotton,22% Nylon, 3% Spandex",
+        "id": 21
+    },
+    {
+        "name": "Premium 4-Pair Men's Wool Blend Crew Socks",
+        "brand": "Weatherproof",
+        "price": 22.99,
+        "image": "https://m.media-amazon.com/images/I/81UdUr31gQL._AC_SX679_.jpg",
+        "fit": "Crew Cut",
+        "material": "Wool",
+        "id": 22
+    },
+    {
+        "name": "Women's Casual Ankle Socks Low Cut Athletic Socks 6 Pairs",
+        "brand": "Bataidis",
+        "price": 23.55,
+        "image": "https://m.media-amazon.com/images/I/71AHcIzocWL._AC_SX679_.jpg",
+        "fit": "Low Cut",
+        "material": "71% combed cotton, 19% polyester, 6% nylon, 2% rubber, 2% spandex",
+        "id": 23
+    },
+    {
+        "name": "Anti Slip Non Skid Hospital Socks with Grippers ",
+        "brand": "RATIVE",
+        "price": 15.99,
+        "image": "https://m.media-amazon.com/images/I/71b5PUw80uL._AC_SY741_.jpg",
+        "fit": "Crew Cut",
+        "material": "Cotton+Nylon+Spandex",
+        "id": 24
+    },
+    {
+        "name": "Unisex Non Slip Socks with Grips Cushion for Yoga Pilates",
+        "brand": "Unenow",
+        "price": 16.99,
+        "image": "https://m.media-amazon.com/images/I/81erykeNRZL._AC_SL1500_.jpg",
+        "fit": "Ankle Cut",
+        "material": "Cotton",
+        "id": 25
+    },
+    {
+        "name": "Men Non Slip Anti-Skid Socks 3 Pairs Tile Wood Floors Sticky Grips",
+        "brand": "ELUTONG",
+        "price": 8.99,
+        "image": "https://m.media-amazon.com/images/I/61mLiPnl7rL._AC_SX679_.jpg",
+        "fit": "Ankle Cut",
+        "material": "Cotton",
+        "id": 26
+    },
+    {
+        "name": "Women's and Men's 4 Pairs Thin Cotton Tie-dye Low Cut Ankle Socks",
+        "brand": "MONFOOT",
+        "price": 19.99,
+        "image": "https://m.media-amazon.com/images/I/812z1ADcNsL._AC_SX679_.jpg",
+        "fit": "Low Cut",
+        "material": "69% Polyester, 28% Cotton, 3% Spandex",
+        "id": 27
+    }
+
+]

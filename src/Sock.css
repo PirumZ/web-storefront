@@ -1,5 +1,14 @@
+/* Basic styling for Sock component, mostly just coloring and spacing options */
 .sock{
-    border: solid gray 2px;
+    border: solid #7091E6 3px;
+    border-radius: 5px;
     margin: 5px;
-    width: 300px;
+    padding: 3px;
+    background-color: white;
+    text-align: left;
+    
+}
+
+.header{
+    margin-top: 2%;
 }

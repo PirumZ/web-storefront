@@ -1,36 +1,15 @@
-import Col from "react-bootstrap/Col";
-import Row from "react-bootstrap/Row";
-import Container from "react-bootstrap/Container";
-import { useState } from "react";
-import SockSale from "../Components/SockSale"
-import mySockSale from "../Components/SocksSale.json"
+import SaleList from "../Components/SaleList";
+import PageButton from "../Components/PageButton";
 
 export default function LandingPage() {
-
-  const [socksale] = useState(mySockSale);
-
-
-  return (
-    <div className="sock-list">
-        <h2>We Sell Socks Here. I hope you like 'em.</h2>
-    <Container fluid="lg" className="mt-4">
-        <Row>
-            <Col>
-            {socksale.map((socksale) => (
-              <SockSale
-                key={socksale.id}
-                name={socksale.name}
-                brand={socksale.brand}
-                price={socksale.price}
-                pricesale={socksale.pricesale}
-                fit={socksale.fit}
-                material={socksale.material}
-                image={socksale.image}
-              />
-          ))}
-            </Col>
-        </Row>
-    </Container>
-    </div>
+  return(
+    // Page users first interact with on the site
+    // Components are imported to fill out content
+  <div>
+    <h2>We Sell Socks Here. I hope you like 'em.</h2>
+    <h3>While you're here, take a look at some of our sale items. :)</h3>
+    <PageButton />
+    <SaleList />;
+  </div>
   );
 }

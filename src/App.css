@@ -1,5 +1,9 @@
+/* Basic CSS to edit background color and font style */
 .App {
   text-align: center;
+  background-color: #ADD8E6;
+  min-height: 100vh;
+  font-family: "Gamja Flower", sans-serif;
 }
 
 @media (prefers-reduced-motion: no-preference) {

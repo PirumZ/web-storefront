@@ -1,7 +1,7 @@
-import Container from "react-bootstrap/Container";
-import ProductCart from "../Components/ProductCart";
+//import Container from "react-bootstrap/Container";
+//import ProductCart from "../Components/ProductCart";
 import React from 'react';
-import ShoppingCart from './ShoppingCart';
+import ShoppingCart from '../Components/ShoppingCart';
 
 export default function CartPage() {
 
