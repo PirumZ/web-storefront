@@ -18,7 +18,7 @@ export default function ShoppingCart() {
                 </div>
             ))}
             {/* Display pre-tax total price */}
-            <p>Total: $0.00</p> 
+            Total: $0.00 
         </div>
     );
 }

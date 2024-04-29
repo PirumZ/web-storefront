@@ -4,6 +4,8 @@ import { useState } from "react";
 import SockSale from "../Components/SockSale"
 import mySockSale from "../Components/JSONs/SocksSale.json"
 import "bootstrap/dist/css/bootstrap.min.css";
+import PageButton from "../Components/PageButton";
+
 
 
 export default function SaleList() {
@@ -15,6 +17,7 @@ export default function SaleList() {
     <div className="sock-list">
         <h2>We Sell Socks Here. I hope you like 'em.</h2>
         <h3>While you're here, take a look at some of our sale items. :)</h3>
+        <PageButton />
     <Container fluid="lg" className="mt-4">
         <Row lg={4} className="justify-content-center">
             
