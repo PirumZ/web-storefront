@@ -88,6 +88,23 @@
         "fit": "Ankle",
         "material": "63.3% Combed Cotton, 21.5% Nylon, 13.8% Polyester, 1.4% Spandex",
         "id": 9
+    },
+    {
+        "name": "Athletic Running Socks Cushion Padded Moisture Wicking Low Cut",
+        "brand": "Hylaea",
+        "price": 22.99,
+        "image": "https://m.media-amazon.com/images/I/71qt9BZIIXL._AC_SX679_.jpg",
+        "fit": "Ankle",
+        "material": "Coolmax, Lycra",
+        "id": 28
+    },
+    {
+        "name": "Peak Mens Crew Socks - Long Tube Half Cushion Mens Socks",
+        "brand": "Wrangler",
+        "price": 19.99,
+        "image": "https://m.media-amazon.com/images/I/81ybKIO3PUL._AC_SX679_.jpg",
+        "fit": "Long Tube",
+        "material": "68% Nylon / 24% Polyester / 5% Rubber / 2% Spandex / 1% Other",
+        "id": 29
     }
-    
 ]

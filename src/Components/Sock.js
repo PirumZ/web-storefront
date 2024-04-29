@@ -12,7 +12,10 @@ export default function Sock(props) {
         <b>Name: </b>{props.brand} {props.name}
       </div>
       <div className="fit-mat">
-       <b>Fit and Mat: </b>{props.fit} {props.material}
+       <b>Fit: </b>{props.fit} 
+      </div>
+      <div>
+      <b>Material:</b> {props.material}
       </div>
       <div>
         <b>Price: </b>{props.price}
