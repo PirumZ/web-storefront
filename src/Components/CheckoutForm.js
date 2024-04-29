@@ -1,6 +1,30 @@
 import React from "react";
 
 export default function CheckoutForm() {
+
+  // State to store form data
+  const [formData, setFormData] = useState({
+    paymentMethod: 'credit',
+    shippingMethod: 'standard',
+    billingAddress: '',
+    shippingAddress: '',
+    subtotal: 0,
+  });
+
+  // Function to handle form changes
+  const handleFormChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  // Calculate total including tax
+  const calculateTotal = () => {
+    const taxRate = 0.06; // 6% tax rate
+    const subtotal = formData.subtotal;
+    const taxAmount = subtotal * taxRate;
+    return subtotal + taxAmount;
+  };
+  
   return (
     <form>
       {/* Payment method */}
