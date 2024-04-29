@@ -1,11 +1,31 @@
-import React, { useEffect } from "react";
+import React, { useState } from "react";
 import React from 'react';
 import socksData from '../Components/RegularSocks.json';
 
 export default function ShoppingCart() {
     
     // Fetch items from JSON file or any other source
-    const socks = socksData;
+    const [cartItems, setCartItems] = useState(socksData);
+
+    // Function to remove an item from the cart
+    const removeFromCart = (sockId) => {
+        const updatedCartItems = cartItems.filter(sock => sock.id !== sockId);
+        setCartItems(updatedCartItems);
+    };
+
+    // Function to update the quantity of an item in the cart
+    const updateQuantity = (sockId, newQuantity) => {
+        const updatedCartItems = cartItems.map(sock => {
+            if (sock.id === sockId) {
+                return { ...sock, quantity: newQuantity };
+            }
+            return sock;
+        });
+        setCartItems(updatedCartItems);
+    };
+
+    // Calculate total price of all items in the cart
+    const totalPrice = cartItems.reduce((total, sock) => total + (sock.price * sock.quantity), 0);
 
     return (
         <div>
@@ -14,12 +34,17 @@ export default function ShoppingCart() {
                 <div key={sock.id}>
                     <p>{sock.name}</p>
                     <p>{sock.price}</p>
-                    <button>Remove</button>
-                    <input type="number" defaultValue={1} min={1} />
+                    <button onClick={() => removeFromCart(sock.id)}>Remove</button>
+                    <input 
+                        type="number" 
+                        defaultValue={0} 
+                        min={0} 
+                        onChange={(e) => updateQuantity(item.id, parseInt(e.target.value))}
+                    />
                 </div>
             ))}
             {/* Display pre-tax total price */}
-            <p>Total: $0.00</p>
+            <p>Total: ${totalPrice.toFixed(2)}</p>
         </div>
     );
 }
