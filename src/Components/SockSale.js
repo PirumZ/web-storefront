@@ -1,5 +1,4 @@
 import React from "react";
-import { Button } from "react-bootstrap";
 import "../Sock.css";
 
 export default function SockSale(props) {
@@ -21,7 +20,7 @@ export default function SockSale(props) {
       </div>
       <div>
         <b>Price: </b>
-        <s>${props.price}</s> ${props.pricesale}
+        <s>${props.price}</s> ${props.pricesale} per pair
       </div>
       </div>
   );

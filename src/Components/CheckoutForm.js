@@ -1,7 +1,13 @@
 import React, { useState } from "react";
 import { Button, Form, Container, Row, Col } from "react-bootstrap";
+import { ShopContext } from "../Components/ShopContext";
+import { useContext } from "react";
 
 export default function CheckoutForm() {
+  const { getTotalCartAmountPostTax } = useContext(ShopContext);
+  const totalAmountBeforeRound = getTotalCartAmountPostTax();
+  const totalAmount = totalAmountBeforeRound.toFixed(2);
+
   const [formData, setFormData] = useState({
     email: "",
     paymentMethod: "",
@@ -110,7 +116,7 @@ export default function CheckoutForm() {
           </Col>
         </Row>
         {invoice && (
-          <div>
+          <div className="mt-3">
             <h3>Generated Invoice</h3>
             <p>
               <b>Email:</b> {invoice.email}
@@ -128,11 +134,12 @@ export default function CheckoutForm() {
               <b>Shipping Address:</b> {invoice.shippingAddress}
             </p>
             <p>
-              <b>Total:</b> ${invoice.total}
+              <b>Total:</b> ${totalAmount}
             </p>
+            <small>Thank you for money</small>
           </div>
         )}
-        <Button variant="primary" type="submit" className="mt-3">
+        <Button variant="primary" type="submit" className="mt-2">
           Generate Invoice
         </Button>
       </Form>

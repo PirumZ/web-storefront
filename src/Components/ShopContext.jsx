@@ -20,10 +20,27 @@ export default function ShopContextProvider(props) {
       if (cartItems[item] > 0) {
         var itemInfo = sockdata.find((sock) => sock.id === Number(item));
         totalAmount += cartItems[item] * itemInfo.price;
+        
       }
     }
     return totalAmount;
   };
+  const getTotalCartAmountPostTax = () => {
+    var totalAmount = 0;
+    var tax = 0;
+    var totalAmountPT = 0;
+    for (const item in cartItems) {
+      if (cartItems[item] > 0) {
+        var itemInfo = sockdata.find((sock) => sock.id === Number(item));
+        totalAmount += cartItems[item] * itemInfo.price;
+        tax = totalAmount * 0.06;
+        totalAmountPT = totalAmount + tax;
+      }
+    }
+    return totalAmountPT;
+  };
+
+
 
   const addToCart = (itemId) => {
     setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }));
@@ -48,6 +65,7 @@ export default function ShopContextProvider(props) {
     removeFromCart,
     getTotalCartAmount,
     checkout,
+    getTotalCartAmountPostTax
   };
   return (
     <ShopContext.Provider value={contextValue}>

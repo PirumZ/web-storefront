@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import "../Sock.css";
-import { Button, Form, Col } from "react-bootstrap";
+import { Button, Col } from "react-bootstrap";
 import { ShopContext } from "./ShopContext";
 
 export default function CartItem(props) {
@@ -16,27 +16,31 @@ export default function CartItem(props) {
         {props.brand} {props.name}
       </div>
       <div>
-        <b>Price: </b>${props.price}
+        <b>Price: </b>${props.price} per pair
       </div>
       <div className="countHandler">
-
-
-        <Col lg={4} md={4}>
-          <Form.Group className="mb-3">
-            <Form.Control type="text" placeholder={cartItems[props.id]} onChange={(e) =>
+        <input
+          value={cartItems[props.id]}
+          onChange={(e) =>
             updateCartItemCount(Number(e.target.value), props.id)
-          } />
-          </Form.Group>
+          }
+        />
+        <Col>
+          <Button
+            className="bg-primary me-1 mt-2"
+            onClick={() => addToCart(props.id)}
+          >
+            {" "}
+            Add{" "}
+          </Button>
+          <Button
+            className="bg-primary ms-1 mt-2"
+            onClick={() => removeFromCart(props.id)}
+          >
+            {" "}
+            Remove{" "}
+          </Button>
         </Col>
-
-        <Button className=" me-2" onClick={() => addToCart(props.id)}>
-          {" "}
-          Add{" "}
-        </Button>
-        <Button  onClick={() => removeFromCart(props.id)}>
-          {" "}
-          Remove{" "}
-        </Button>
       </div>
     </div>
   );

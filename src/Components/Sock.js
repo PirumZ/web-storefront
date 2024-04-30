@@ -27,7 +27,7 @@ export default function Sock(props) {
         <b>Material:</b> {props.material}
       </div>
       <div>
-        <b>Price: </b>${props.price}
+        <b>Price: </b>${props.price} per pair
       </div>
       {/*Button designed to add said item to the shopping cart*/}
       <Button className="btn btn-primary" onClick={() => addToCart(props.id)}>
