@@ -1,3 +1,5 @@
+import "../Sock.css";
+
 export default function CartItem(props) {
   return (
     <div className="sock">
@@ -7,13 +9,6 @@ export default function CartItem(props) {
       <div className="sock-name">
         <b>Name: </b>
         {props.brand} {props.name}
-      </div>
-      <div className="fit-mat">
-        <b>Fit: </b>
-        {props.fit}
-      </div>
-      <div>
-        <b>Material:</b> {props.material}
       </div>
       <div>
         <b>Price: </b>${props.price}

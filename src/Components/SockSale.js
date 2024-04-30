@@ -23,8 +23,6 @@ export default function SockSale(props) {
         <b>Price: </b>
         <s>${props.price}</s> ${props.pricesale}
       </div>
-      {/*Button designed to add said item to the shopping cart*/}
-      <Button className="btn btn-primary">Add to Cart</Button>
-    </div>
+      </div>
   );
 }

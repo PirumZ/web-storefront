@@ -15,10 +15,10 @@ export default function ShopContextProvider(props)  {
   const [cartItems, setCartItems] = useState(getDefaultCart());
 
   const getTotalCartAmount = () => {
-    let totalAmount = 0;
+    var totalAmount = 0;
     for (const item in cartItems) {
       if (cartItems[item] > 0) {
-        let itemInfo = sockdata.find((product) => product.id === Number(item));
+        var itemInfo = sockdata.find((product) => product.id === Number(item));
         totalAmount += cartItems[item] * itemInfo.price;
       }
     }
