@@ -13,7 +13,7 @@ export default function SaleList() {
     // Container linking the JSON elements to be used in the Sock component
     // More specifically, this was designed for the socks on sale on the landing page
     <div className="sock-list">
-      <Container fluid="lg" className="mt-4">
+      <Container fluid className="mt-4">
         <Row lg={4} className="justify-content-center">
           {socksale.map((socksale) => (
             <SockSale
