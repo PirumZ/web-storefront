@@ -1,45 +1,43 @@
 import React, { useState } from "react";
-import React from 'react';
-import socksData from '../Components/RegularSocks.json';
 
-export default function ShoppingCart() {
+export default function ShoppingCart(prop) {
     
     // Fetch items from JSON file or any other source
-    const [cartItems, setCartItems] = useState(socksData);
+    const [cartItems, setCartItems] = useState([]);
 
     // Removes an item from the cart
-    const removeFromCart = (sockId) => {
-        const updatedCartItems = cartItems.filter(sock => sock.id !== sockId);
+    const removeFromCart = (propId) => {
+        const updatedCartItems = cartItems.filter(prop => prop.id !== propId);
         setCartItems(updatedCartItems);
     };
 
     // Updates the quantity of an item in the cart
-    const updateQuantity = (sockId, newQuantity) => {
-        const updatedCartItems = cartItems.map(sock => {
-            if (sock.id === sockId) {
-                return { ...sock, quantity: newQuantity };
+    const updateQuantity = (propId, newQuantity) => {
+        const updatedCartItems = cartItems.map(prop => {
+            if (prop.id === propId) {
+                return { ...prop, quantity: newQuantity };
             }
-            return sock;
+            return prop;
         });
         setCartItems(updatedCartItems);
     };
 
     // Calculate total price of all items in the cart
-    const totalPrice = cartItems.reduce((total, sock) => total + (sock.price * sock.quantity), 0);
+    const totalPrice = cartItems.reduce((total, prop) => total + (prop.price * prop.quantity), 0);
 
     return (
         <div>
             {/* Display shopping cart items */}
-            {socks.map(sock => (
-                <div key={sock.id}>
-                    <p>{sock.name}</p>
-                    <p>{sock.price}</p>
-                    <button onClick={() => removeFromCart(sock.id)}>Remove</button>
+            {cartItems.map(prop => (
+                <div key={prop.id}>
+                    <p>{prop.name}</p>
+                    <p>{prop.price}</p>
+                    <button onClick={() => removeFromCart(prop.id)}>Remove</button>
                     <input 
                         type="number" 
                         defaultValue={0} 
                         min={0} 
-                        onChange={(e) => updateQuantity(item.id, parseInt(e.target.value))}
+                        onChange={(e) => updateQuantity(prop.id, parseInt(e.target.value))}
                     />
                 </div>
             ))}

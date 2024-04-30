@@ -1,7 +1,8 @@
 import AthleticList from "../Components/AthleticList";
 import RegularList from "../Components/RegularList";
+import Sock from "../Components/Sock";
 
-export default function ProductPage() {
+export default function ProductPage( {addToCart} ) {
   return (
     // Page housing the entire product offering for the company 
     // Components are imported to fill out content
@@ -14,6 +15,8 @@ export default function ProductPage() {
       <AthleticList />
       <h3 className="header">Regular Socks</h3>
       <RegularList />
+      {/* Render Sock component for each sock */}
+      <Sock addToCart={addToCart} />
     </div>
   );
 }
