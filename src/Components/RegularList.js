@@ -16,13 +16,14 @@ export default function RegularList() {
         <Row lg={4} md={8} className="justify-content-center">
           {regsock.map((regsock) => (
             <Sock
-              key={regsock.id}
+              key={regsock.name}
               name={regsock.name}
               brand={regsock.brand}
               price={regsock.price}
               fit={regsock.fit}
               material={regsock.material}
               image={regsock.image}
+              id={regsock.id}
             />
           ))}
         </Row>

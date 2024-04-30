@@ -9,7 +9,7 @@ export default function LandingPage() {
     <h2>We Sell Socks Here. I hope you like 'em.</h2>
     <h3>While you're here, take a look at some of our sale items. :)</h3>
     <PageButton />
-    <SaleList />;
+    <SaleList />
   </div>
   );
 }
