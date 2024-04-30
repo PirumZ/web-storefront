@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import React from 'react';
-import socksData from '../Components/RegularSocks.json';
+import socksData from '../Components/JSONs/RegularSocks.json';
 
 export default function ShoppingCart() {
     
