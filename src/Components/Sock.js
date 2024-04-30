@@ -5,8 +5,7 @@ import "../Sock.css";
 import { ShopContext } from "./ShopContext";
 
 export default function Sock(props) {
-
-  const { addToCart,cartItems } = useContext(ShopContext);
+  const { addToCart, cartItems } = useContext(ShopContext);
   const cartItemAmount = cartItems[props.id];
 
   return (
@@ -28,13 +27,11 @@ export default function Sock(props) {
         <b>Material:</b> {props.material}
       </div>
       <div>
-        <b>Price: </b>
-        ${props.price}
+        <b>Price: </b>${props.price}
       </div>
       {/*Button designed to add said item to the shopping cart*/}
       <Button className="btn btn-primary" onClick={() => addToCart(props.id)}>
-      Add to Cart {cartItemAmount > 0 && <>({cartItemAmount})</>}
-      
+        Add to Cart {cartItemAmount > 0 && <>({cartItemAmount})</>}
       </Button>
     </div>
   );

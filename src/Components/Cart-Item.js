@@ -1,5 +1,5 @@
-export default function CartItem(props){
-    return( 
+export default function CartItem(props) {
+  return (
     <div className="sock">
       <div className="image">
         <img src={props.image} alt="It's socks" width="20%" height="30%"></img>
@@ -16,9 +16,8 @@ export default function CartItem(props){
         <b>Material:</b> {props.material}
       </div>
       <div>
-        <b>Price: </b>
-        ${props.price}
+        <b>Price: </b>${props.price}
       </div>
-      </div>    
-    );    
-};
+    </div>
+  );
+}
