@@ -1,8 +1,8 @@
+import React from "react";
 import AthleticList from "../Components/AthleticList";
 import RegularList from "../Components/RegularList";
-import Sock from "../Components/Sock";
 
-export default function ProductPage( {addToCart} ) {
+export default function ProductPage({ addToCart }) {
   return (
     // Page housing the entire product offering for the company 
     // Components are imported to fill out content
@@ -12,11 +12,9 @@ export default function ProductPage( {addToCart} ) {
         additions.
       </h2>
       <h3 className="header">Athletic Socks</h3>
-      <AthleticList />
+      <AthleticList addToCart={addToCart} />
       <h3 className="header">Regular Socks</h3>
-      <RegularList />
-      {/* Render Sock component for each sock */}
-      <Sock addToCart={addToCart} />
+      <RegularList addToCart={addToCart} />
     </div>
   );
 }

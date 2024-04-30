@@ -34,7 +34,7 @@ export default function Sock(props) {
         ${props.price}
       </div>
       {/*Button designed to add said item to the shopping cart*/}
-      <Button className="btn btn-primary" onClick={() => addToCart(ShoppingCart)}>Add to Cart</Button>
+      <Button className="btn btn-primary" onClick={addToCart}>Add to Cart</Button>
     </div>
   );
 }
