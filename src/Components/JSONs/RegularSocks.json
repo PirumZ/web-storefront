@@ -1,12 +1,120 @@
 [
     {
+        "name": "Men's Athletic Cushioned Crew Socks with Arch Compression for a Secure Fit (6-Pair)",
+        "brand": "Adidas",
+        "price": 20.99,
+        "image": "https://m.media-amazon.com/images/I/71F-nTsDyuL._AC_SX385_.jpg",
+        "fit": "Semi-fitted",
+        "material": "97% Polyester, 3% spandex",
+        "id": 1
+    },
+    {
+        "name": "Womens Ankle Sock Athletic Running Socks with Tab 6 Pairs",
+        "brand": "ACCFOD",
+        "price": 9.99,
+        "image": "https://m.media-amazon.com/images/I/71NIgNiBxeL._AC_SX385_.jpg",
+        "fit": "Low cut",
+        "material": "Cotton",
+        "id": 2
+    },
+    {
+        "name": "Performance Cushion Crew Socks with Band (6 Pairs)",
+        "brand": "Nike",
+        "price": 21.99,
+        "image": "https://m.media-amazon.com/images/I/81F6fuBgWPL._AC_SX569_.jpg",
+        "fit": "Regular",
+        "material": "56% Polyester, 43% Cotton, 1% Spandex",
+        "id": 3
+    },
+    {
+        "name": "Athletic Running Socks Low Cut Sports Socks Breathable Cushioned Tab Socks for Men Women 6 Pairs",
+        "brand": "Felicigeely",
+        "price": 15.99,
+        "image": "https://m.media-amazon.com/images/I/81NlMinR6vL._AC_SX569_.jpg",
+        "fit": "Low Cut Ankle",
+        "material": "Polyester, Spandex",
+        "id": 4
+    },
+    {
+        "name": "Men's 656S Cotton Crew Athletic Socks, Multipairs",
+        "brand": "GOLDTOE",
+        "price": 14.49,
+        "image": "https://m.media-amazon.com/images/I/81yp8ZpAxpL._AC_SX569_.jpg",
+        "fit": "Sport",
+        "material": "81% Cotton, 18% Nylon, 1% Spandex",
+        "id": 5
+    },
+    {
+        "name": "Performance Tech No Show Socks, Multipliers",
+        "brand": "Under Armour",
+        "price": 13.57,
+        "image": "https://m.media-amazon.com/images/I/81O-tGaIa+L._AC_SX569_.jpg",
+        "fit": "Heel fitted",
+        "material": "69% Polyester, 28% Cotton, 3% Spandex",
+        "id": 6
+    },
+    {
+        "name": "Men's Low Cut Socks",
+        "brand": "PUMA",
+        "price": 12.83,
+        "image": "https://m.media-amazon.com/images/I/81G8PCAxzML._AC_SX569_.jpg",
+        "fit": "Low Cut",
+        "material": "98% Polyester, 2% Spandex",
+        "id": 7
+    },
+    {
+        "name": "Ankle Compression Sock for Men and Women 2/4/6 Pairs, Low Cut Compression Running Sock with Ankle Support",
+        "brand": "PAPLUS",
+        "price": 16.99,
+        "image": "https://m.media-amazon.com/images/I/81LbbHEImmL._AC_SX569_.jpg",
+        "fit": "Regular",
+        "material": "Nylon & Spandex",
+        "id": 8
+    },
+    {
+        "name": "Men's Dri-tech Moisture Control Quarter Socks (6 Pairs)",
+        "brand": "Dickies",
+        "price": 13.99,
+        "image": "https://m.media-amazon.com/images/I/91Q3l8onAmS._AC_SX679_.jpg",
+        "fit": "Quarter",
+        "material": "70% Cotton, 28% Polyester, 2% Spandex",
+        "id": 9
+    },
+    {
+        "name": "6 Pack Men's Running Ankle Socks with Cushion, Low Cut Athletic Tab Socks",
+        "brand": "CELERSPORT",
+        "price": 17.99,
+        "image": "https://m.media-amazon.com/images/I/812kzIlWvuL._AC_SX569_.jpg",
+        "fit": "Ankle",
+        "material": "63.3% Combed Cotton, 21.5% Nylon, 13.8% Polyester, 1.4% Spandex",
+        "id": 10
+    },
+    {
+        "name": "Athletic Running Socks Cushion Padded Moisture Wicking Low Cut",
+        "brand": "Hylaea",
+        "price": 22.99,
+        "image": "https://m.media-amazon.com/images/I/71qt9BZIIXL._AC_SX679_.jpg",
+        "fit": "Ankle",
+        "material": "Coolmax, Lycra",
+        "id": 11
+    },
+    {
+        "name": "Peak Mens Crew Socks - Long Tube Half Cushion Mens Socks",
+        "brand": "Wrangler",
+        "price": 19.99,
+        "image": "https://m.media-amazon.com/images/I/81ybKIO3PUL._AC_SX679_.jpg",
+        "fit": "Long Tube",
+        "material": "68% Nylon / 24% Polyester / 5% Rubber / 2% Spandex / 1% Other",
+        "id": 12
+    },
+    {
         "name": "Men's All Purpose Cushion Crew Socks (6 Pairs)",
         "brand": "Dickies",
         "price": 11.99,
         "image": "https://m.media-amazon.com/images/I/91ChmTMh2DL._AC_SX679_.jpg",
         "fit": "Crew Cut",
         "material": "79% Cotton, 19% Polyester, 1% Nylon, 1% Spandex",
-        "id": 16
+        "id": 13
     },
     {
         "name": "No Show Socks Women Low Socks Non Slip Flat Boat Line, 8 Pairs",
@@ -15,7 +123,7 @@
         "image": "https://m.media-amazon.com/images/I/81u0YoxJdVL._AC_SX679_.jpg",
         "fit": "Low Fit",
         "material": "Cotton",
-        "id": 17
+        "id": 14
     },
     {
         "name": "Organic Cotton Ragg Socks - 1 Pair - Unisex",
@@ -24,7 +132,7 @@
         "image": "https://m.media-amazon.com/images/I/610NGCY77lL._AC_SX679_.jpg",
         "fit": "Comfy",
         "material": "88.3% Cotton, 11.3% Nylon, 0.4% Spandex",
-        "id": 18
+        "id": 15
     },
     {
         "name": "Elite Cushioned Compression Mid-crew Socks 4-Pack",
@@ -33,7 +141,7 @@
         "image": "https://m.media-amazon.com/images/I/81702ZzMniL._AC_SX679_.jpg",
         "fit": "Mid Cut",
         "material": "59% Nylon, 16% Elastane, 13% Combed Cotton, 12% Polyester",
-        "id": 19
+        "id": 16
     },
     {
         "name": "Mens No Show Socks Cotton Low Cut Short Casual Socks Men With Non-Slip Grips",
@@ -42,7 +150,7 @@
         "image": "https://m.media-amazon.com/images/I/81qeUacal9L._AC_SX679_.jpg",
         "fit": "Low Cut",
         "material": "92% Cotton, 5% Polyester and, 3% Spandex",
-        "id": 20
+        "id": 17
     },
     {
         "name": "No Show Socks for Men 8 pack Cotton Thin Low Cut Non Slip for Loafer Flats Sneakers",
@@ -51,7 +159,7 @@
         "image": "https://m.media-amazon.com/images/I/71ValgVt8rL._AC_SX679_.jpg",
         "fit": "Low Cut",
         "material": "75% Cotton,22% Nylon, 3% Spandex",
-        "id": 21
+        "id": 18
     },
     {
         "name": "Premium 4-Pair Men's Wool Blend Crew Socks",
@@ -60,7 +168,7 @@
         "image": "https://m.media-amazon.com/images/I/81UdUr31gQL._AC_SX679_.jpg",
         "fit": "Crew Cut",
         "material": "Wool",
-        "id": 22
+        "id": 19
     },
     {
         "name": "Women's Casual Ankle Socks Low Cut Athletic Socks 6 Pairs",
@@ -69,7 +177,7 @@
         "image": "https://m.media-amazon.com/images/I/71AHcIzocWL._AC_SX679_.jpg",
         "fit": "Low Cut",
         "material": "71% combed cotton, 19% polyester, 6% nylon, 2% rubber, 2% spandex",
-        "id": 23
+        "id": 20
     },
     {
         "name": "Anti Slip Non Skid Hospital Socks with Grippers ",
@@ -77,8 +185,8 @@
         "price": 15.99,
         "image": "https://m.media-amazon.com/images/I/71b5PUw80uL._AC_SY741_.jpg",
         "fit": "Crew Cut",
-        "material": "Cotton+Nylon+Spandex",
-        "id": 24
+        "material":"Cotton+Nylon+Spandex",
+        "id": 21
     },
     {
         "name": "Unisex Non Slip Socks with Grips Cushion for Yoga Pilates",
@@ -87,7 +195,7 @@
         "image": "https://m.media-amazon.com/images/I/81erykeNRZL._AC_SL1500_.jpg",
         "fit": "Ankle Cut",
         "material": "Cotton",
-        "id": 25
+        "id": 22
     },
     {
         "name": "Men Non Slip Anti-Skid Socks 3 Pairs Tile Wood Floors Sticky Grips",
@@ -96,7 +204,7 @@
         "image": "https://m.media-amazon.com/images/I/61mLiPnl7rL._AC_SX679_.jpg",
         "fit": "Ankle Cut",
         "material": "Cotton",
-        "id": 26
+        "id": 23
     },
     {
         "name": "Women's and Men's 4 Pairs Thin Cotton Tie-dye Low Cut Ankle Socks",
@@ -105,7 +213,7 @@
         "image": "https://m.media-amazon.com/images/I/812z1ADcNsL._AC_SX679_.jpg",
         "fit": "Low Cut",
         "material": "69% Polyester, 28% Cotton, 3% Spandex",
-        "id": 27
+        "id": 24
     }
 
 ]

@@ -6,12 +6,14 @@ import CheckoutPage from "./Pages/Checkout";
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NavigationBar from "./Components/NavBar";
+import ShopContextProvider from "./Components/ShopContext";
 
 /*App function depicting the movielist to the screen utilizing BS
 for responsiveness, along with some imports from BS.*/
 function App() {
   return (
     <div className="App">
+    <ShopContextProvider>
       <BrowserRouter>
         <NavigationBar />
         <Routes>
@@ -21,6 +23,7 @@ function App() {
           <Route path="/checkout" element={<CheckoutPage />} />
         </Routes>
       </BrowserRouter>
+      </ShopContextProvider>
     </div>
   );
 }

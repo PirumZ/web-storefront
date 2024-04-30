@@ -16,13 +16,14 @@ export default function SaleList() {
         <Row lg={4} md={8} className="justify-content-center">
           {athsock.map((athsock) => (
             <Sock
-              key={athsock.id}
+              key={athsock.name}
               name={athsock.name}
               brand={athsock.brand}
               price={athsock.price}
               fit={athsock.fit}
               material={athsock.material}
               image={athsock.image}
+              id={athsock.id}
             />
           ))}
         </Row>

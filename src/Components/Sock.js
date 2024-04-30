@@ -1,15 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Button } from "react-bootstrap";
 import "../Sock.css";
-import ProductPage from "../Pages/Products";
-import ShoppingCart from "./ShoppingCart";
+//import ProductPage from "../Pages/Products";
+import { ShopContext } from "./ShopContext";
 
 export default function Sock(props) {
 
-  const addToCart = () => {
-    // Call the addToCart function passed as a prop with the sock item
-    props.addToCart(props.sock);
-  };
+  const { addToCart,cartItems } = useContext(ShopContext);
+  const cartItemAmount = cartItems[props.id];
 
   return (
     // Pretty basic component designating the layout of all of the normal and athletic socks
@@ -34,7 +32,10 @@ export default function Sock(props) {
         ${props.price}
       </div>
       {/*Button designed to add said item to the shopping cart*/}
-      <Button className="btn btn-primary" onClick={() => addToCart(ShoppingCart)}>Add to Cart</Button>
+      <Button className="btn btn-primary" onClick={() => addToCart(props.id)}>
+      Add to Cart {cartItemAmount > 0 && <>({cartItemAmount})</>}
+      
+      </Button>
     </div>
   );
 }

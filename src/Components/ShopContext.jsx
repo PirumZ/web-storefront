@@ -1,26 +1,58 @@
-/*import React, { createContext, useState } from 'react';
-import athdata from "../Components/JSONs/AthleticSocks.json";
+import React, { createContext, useState } from "react";
+import sockdata from "../Components/JSONs/RegularSocks.json";
 
 export const ShopContext = createContext(null);
 
-function getDefaultCart(){
-    let cart = {}
-    for (let i = 0; i < athdata.length + 1; i++){
-        cart[i] = 0;
+const getDefaultCart = () => {
+  let cart = {};
+  for (let i = 1; i < sockdata.length + 1; i++) {
+    cart[i] = 0;
+  }
+  return cart;
+};
+
+export default function ShopContextProvider(props)  {
+  const [cartItems, setCartItems] = useState(getDefaultCart());
+
+  const getTotalCartAmount = () => {
+    let totalAmount = 0;
+    for (const item in cartItems) {
+      if (cartItems[item] > 0) {
+        let itemInfo = sockdata.find((product) => product.id === Number(item));
+        totalAmount += cartItems[item] * itemInfo.price;
+      }
     }
-    return cart;
-}  
+    return totalAmount;
+  };
 
-export default function ShopContextProvider(props) {
+  const addToCart = (itemId) => {
+    setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }));
+  };
 
-    const [cartItems, setCartItems] = useState(getDefaultCart);
+  const removeFromCart = (itemId) => {
+    setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] - 1 }));
+  };
 
-    function addToCart(itemId){
-      setCartItems((prev) => ({...prev, [itemId]: prev[itemId] + 1}))
-    }
+  const updateCartItemCount = (newAmount, itemId) => {
+    setCartItems((prev) => ({ ...prev, [itemId]: newAmount }));
+  };
+
+  const checkout = () => {
+    setCartItems(getDefaultCart());
+  };
+
+  const contextValue = {
+    cartItems,
+    addToCart,
+    updateCartItemCount,
+    removeFromCart,
+    getTotalCartAmount,
+    checkout,
+  };
   return (
-  <ShopContext.Provider>
-    {props.children}
-  </ShopContext.Provider>
-  )
-};*/
+    <ShopContext.Provider value={contextValue}>
+      {props.children}
+    </ShopContext.Provider>
+  );
+};
+
