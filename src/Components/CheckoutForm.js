@@ -1,20 +1,19 @@
-import React, { useState } from 'react';
-import { Button, Form, Container, Row, Col } from 'react-bootstrap';
-
+import React, { useState } from "react";
+import { Button, Form, Container, Row, Col } from "react-bootstrap";
 
 export default function CheckoutForm() {
   const [formData, setFormData] = useState({
-    email: '',
-    paymentMethod: '',
-    shippingMethod: '',
-    billingAddress: '',
-    shippingAddress: '',
+    email: "",
+    paymentMethod: "",
+    shippingMethod: "",
+    billingAddress: "",
+    shippingAddress: "",
   });
   const [invoice, setInvoice] = useState(null);
 
   function handleChange(e) {
     const { name, value } = e.target;
-    setFormData(function(prevData) {
+    setFormData(function (prevData) {
       return {
         ...prevData,
         [name]: value,
@@ -61,7 +60,9 @@ export default function CheckoutForm() {
             onChange={handleChange}
           >
             <option>Pick a Card, Any Card</option>
-            <option value="Credit Card">Credit Card (MasterCard, Visa, Chase, etc)</option>
+            <option value="Credit Card">
+              Credit Card (MasterCard, Visa, Chase, etc)
+            </option>
             <option value="Debit Card">Debit Card</option>
             <option value="PayPal/Venmo">PayPal/Venmo</option>
           </Form.Select>
@@ -111,15 +112,27 @@ export default function CheckoutForm() {
         {invoice && (
           <div>
             <h3>Generated Invoice</h3>
-            <p><b>Email:</b> {invoice.email}</p>
-            <p><b>Payment Method:</b> {invoice.paymentMethod}</p>
-            <p><b>Shipping Method:</b> {invoice.shippingMethod}</p>
-            <p><b>Billing Address:</b> {invoice.billingAddress}</p>
-            <p><b>Shipping Address:</b> {invoice.shippingAddress}</p>
-            <p><b>Total:</b> ${invoice.total}</p>
+            <p>
+              <b>Email:</b> {invoice.email}
+            </p>
+            <p>
+              <b>Payment Method:</b> {invoice.paymentMethod}
+            </p>
+            <p>
+              <b>Shipping Method:</b> {invoice.shippingMethod}
+            </p>
+            <p>
+              <b>Billing Address:</b> {invoice.billingAddress}
+            </p>
+            <p>
+              <b>Shipping Address:</b> {invoice.shippingAddress}
+            </p>
+            <p>
+              <b>Total:</b> ${invoice.total}
+            </p>
           </div>
         )}
-        <Button variant="primary" type="submit" className='mt-3'>
+        <Button variant="primary" type="submit" className="mt-3">
           Generate Invoice
         </Button>
       </Form>

@@ -11,14 +11,14 @@ const getDefaultCart = () => {
   return cart;
 };
 
-export default function ShopContextProvider(props)  {
+export default function ShopContextProvider(props) {
   const [cartItems, setCartItems] = useState(getDefaultCart());
 
   const getTotalCartAmount = () => {
     var totalAmount = 0;
     for (const item in cartItems) {
       if (cartItems[item] > 0) {
-        var itemInfo = sockdata.find((product) => product.id === Number(item));
+        var itemInfo = sockdata.find((sock) => sock.id === Number(item));
         totalAmount += cartItems[item] * itemInfo.price;
       }
     }
@@ -54,5 +54,4 @@ export default function ShopContextProvider(props)  {
       {props.children}
     </ShopContext.Provider>
   );
-};
-
+}
