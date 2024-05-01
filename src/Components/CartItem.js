@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import "../Sock.css";
+import "../CSS/Sock.css";
 import { Button, Col } from "react-bootstrap";
 import { ShopContext } from "./ShopContext";
 

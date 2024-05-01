@@ -2,7 +2,7 @@ import { useContext } from "react";
 import regsock from "../Components/JSONs/RegularSocks.json";
 import { ShopContext } from "../Components/ShopContext";
 import CartItem from "../Components/CartItem";
-import "../Sock.css";
+import "../CSS/Sock.css";
 import { Container, Row } from "react-bootstrap";
 import { Button } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";

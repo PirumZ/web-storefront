@@ -1,5 +1,5 @@
 import React from "react";
-import "../Sock.css";
+import "../CSS/Sock.css";
 
 export default function SockSale(props) {
   return (

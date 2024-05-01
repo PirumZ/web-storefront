@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { Button } from "react-bootstrap";
-import "../Sock.css";
+import "../CSS/Sock.css";
 import { ShopContext } from "./ShopContext";
 
 export default function Sock(props) {

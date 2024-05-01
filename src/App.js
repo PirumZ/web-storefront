@@ -3,7 +3,7 @@ import LandingPage from "./Pages/Landing";
 import CartPage from "./Pages/Cart";
 import ProductPage from "./Pages/Products";
 import CheckoutPage from "./Pages/Checkout";
-import "./App.css";
+import "./CSS/App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NavigationBar from "./Components/NavBar";
 import ShopContextProvider from "./Components/ShopContext";
