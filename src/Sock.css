@@ -13,9 +13,11 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 75%;
+    width: 250px;
     height: 250px;
     padding-bottom: 5px;
+    overflow: hidden;
+    object-fit: fill;
 }
 
 .header{

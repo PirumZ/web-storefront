@@ -9,7 +9,7 @@ export default function ProductPage() {
         This is our entire inventory. Please email us if you'd like new
         additions.
       </h2>
-      <h3 className="header">Athletic/Regular Socks</h3>
+      <h3 className="header">Pants & Socks for All</h3>
       <RegularList />
     </div>
   );
