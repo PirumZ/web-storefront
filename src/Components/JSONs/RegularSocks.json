@@ -214,6 +214,113 @@
         "fit": "Low Cut",
         "material": "69% Polyester, 28% Cotton, 3% Spandex",
         "id": 24
+    },
+    {
+        "name": "Men's Classic-Fit Wrinkle-Resistant Flat-Front Chino Pant",
+        "brand": "Amazon Essentials",
+        "price": 23.99,
+        "image": "https://m.media-amazon.com/images/I/71Aa3OBGBUS._AC_SX522_.jpg",
+        "fit": "Classic",
+        "material": "60% Cotton, 40% Polyester",
+        "id": 25
+    },
+    {
+        "name": "Dockers Men's Straight Fit Signature Lux Cotton Stretch Khaki Pant",
+        "brand": "Dockers",
+        "price": 29.99,
+        "image": "https://m.media-amazon.com/images/I/71htYLGmQ-L._AC_SX569_.jpg",
+        "fit": "Straight",
+        "material": "76% Cotton, 23% Polyester, 1% Elastane",
+        "id": 26
+    },
+    {
+        "name": "Men's Athletic-Fit Casual Stretch Chino Pant",
+        "brand": "Amazon Essentials",
+        "price": 24.99,
+        "image": "https://m.media-amazon.com/images/I/71SOUDApeFL._AC_SX522_.jpg",
+        "fit": "Athletic",
+        "material": "97% Cotton, 3% Spandex",
+        "id": 27
+    },
+    {
+        "name": "Men's Regular Fit Comfort Flex Waist Jean",
+        "brand": "Wrangler Authentics",
+        "price": 28.99,
+        "image": "https://m.media-amazon.com/images/I/61VKhX5qmzL._AC_SY741_.jpg",
+        "fit": "Regular",
+        "material": "98% Cotton, 2% Spandex",
+        "id": 28
+    },
+    {
+        "name": "Mens Cargo Pants Casual Joggers Athletic Pants Cotton Loose Straight Sweatpants",
+        "brand": "THWEI",
+        "price": 26.99,
+        "image": "https://m.media-amazon.com/images/I/61uA3JdGVAL._AC_SX679_.jpg",
+        "fit": "Straight",
+        "material": "95% Cotton, 5% Spandex",
+        "id": 29
+    },
+    {
+        "name": "Men's Regular Straight Stretch Twill Cargo Pant",
+        "brand": "Dickies",
+        "price": 34.99,
+        "image": "https://m.media-amazon.com/images/I/61n8p6i3qFL._AC_SX522_.jpg",
+        "fit": "Straight",
+        "material": "65% Polyester, 35% Cotton",
+        "id": 30
+    },
+    {
+        "name": "Men's Industrial Cargo Pant",
+        "brand": "Red Kap",
+        "price": 38.99,
+        "image": "https://m.media-amazon.com/images/I/71606euVfvL._AC_SX522_.jpg",
+        "fit": "Straight",
+        "material": "65% Polyester, 35% Cotton",
+        "id": 31
+    },
+    {
+        "name": "Women's Lightweight Cargo Pants Quick Dry Joggers with 6 Pockets Elastic Waist and Water-Resistant Hiking Pants",
+        "brand": "AB-Eleven",
+        "price": 25.99,
+        "image": "https://m.media-amazon.com/images/I/51a7ohrsBAL._AC_SY679_.jpg",
+        "fit": "Cargo",
+        "material": " 90% Polyester, 10% Spandex ",
+        "id": 32
+    },
+    {
+        "name": "Womens 4-Way Stretch Ankle Golf Pants - 7/8 Dress Work Pants Pockets Athletic Travel Casual Lounge Workout",
+        "brand": "CRZ YOGA",
+        "price": 34.99,
+        "image": "https://m.media-amazon.com/images/I/61ui7Mct-zL._AC_SX522_.jpg",
+        "fit": "Slim",
+        "material": "75% Polyamide, 25% Spandex",
+        "id": 33
+    },
+    {
+        "name": "Women's Relaxed Fit All Day Straight Leg Pant",
+        "brand": "Lee",
+        "price": 29.23,
+        "image": "https://m.media-amazon.com/images/I/61yPVSYFxuL._AC_SX679_.jpg",
+        "fit": "Relaxed",
+        "material": "98% Cotton, 2% Spandex",
+        "id": 34
+    },
+    {
+        "name": "Women's Wrinkle Free Relaxed Fit Straight Leg Pant",
+        "brand": "Lee",
+        "price": 28.31,
+        "image": "https://m.media-amazon.com/images/I/71gKcqlFfnL._AC_SX679_.jpg",
+        "fit": "Relaxed",
+        "material": " 71% Cotton, 26% Polyester, 3% Spandex",
+        "id": 35
+    },
+    {
+        "name": "Wide Leg Pants for Women Yoga Dress Pants with Pockets Petite/Regular/Tall Loose Casual Work Trouser Pants",
+        "brand": "G4Free",
+        "price": 33.99,
+        "image": "https://m.media-amazon.com/images/I/610T8xijJaL._AC_SX569_.jpg",
+        "fit": "Casual",
+        "material": "81% Polyester, 19% Spandex",
+        "id": 36
     }
-
 ]
