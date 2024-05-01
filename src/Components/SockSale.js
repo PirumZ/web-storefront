@@ -20,7 +20,7 @@ export default function SockSale(props) {
       </div>
       <div>
         <b>Price: </b>
-        <s>${props.price}</s> ${props.pricesale} per pair
+        <s>${props.price}</s> ${props.pricesale}
       </div>
       </div>
   );

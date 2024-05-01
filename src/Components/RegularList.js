@@ -12,7 +12,7 @@ export default function RegularList() {
     // Container linking the JSON elements to be used in the Sock component
     // More specifically, this was designed for Regular Socks
     <div className="sock-list">
-      <Container fluid className="mt-4">
+      <Container className="mt-4">
         <Row lg={4} md={8} className="justify-content-center">
           {regsock.map((regsock) => (
             <Sock

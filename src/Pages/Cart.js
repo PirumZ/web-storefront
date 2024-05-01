@@ -20,13 +20,14 @@ export default function CartPage() {
           <h1>Your Cart Items</h1>
         </div>
         <div>
-          <Row lg={3} md={8} className="justify-content-center">
+          <Row lg={4} md={8} className="justify-content-center">
             {sockdata
               .filter((sock) => cartItems[sock.id] !== 0)
               .map((sock) => (
                 <CartItem
                   key={sock.name}
                   name={sock.name}
+                  brand={sock.brand}
                   price={sock.price}
                   image={sock.image}
                   id={sock.id}
