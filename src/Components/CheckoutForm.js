@@ -4,10 +4,12 @@ import { ShopContext } from "../Components/ShopContext";
 import { useContext } from "react";
 
 export default function CheckoutForm() {
+  // constants required for calculating the total post tax
   const { getTotalCartAmountPostTax } = useContext(ShopContext);
   const totalAmountBeforeRound = getTotalCartAmountPostTax();
   const totalAmount = totalAmountBeforeRound.toFixed(2);
 
+  // placeholders for the invoice fields
   const [formData, setFormData] = useState({
     email: "",
     paymentMethod: "",
@@ -17,6 +19,7 @@ export default function CheckoutForm() {
   });
   const [invoice, setInvoice] = useState(null);
 
+  // logic for changing data 
   function handleChange(e) {
     const { name, value } = e.target;
     setFormData(function (prevData) {
@@ -29,21 +32,22 @@ export default function CheckoutForm() {
 
   function handleSubmit(e) {
     e.preventDefault();
-    // Generate invoice
+    // lenerate invoice
     const generatedInvoice = {
       email: formData.email,
       paymentMethod: formData.paymentMethod,
       shippingMethod: formData.shippingMethod,
       billingAddress: formData.billingAddress,
       shippingAddress: formData.shippingAddress,
-      total: 0, // Placeholder for total
+      total: 0, // placeholder for total
     };
 
-    // Set the generated invoice in the state
+    // set the generated invoice in the state
     setInvoice(generatedInvoice);
   }
 
   return (
+    // very long form that sends data to the invoice variables
     <Container>
       <Form onSubmit={handleSubmit}>
         <Form.Group controlId="formBasicEmail">
@@ -136,7 +140,7 @@ export default function CheckoutForm() {
             <p>
               <b>Total:</b> ${totalAmount}
             </p>
-            <small>Thank you for money</small>
+            <small>Thank you for your (our) money</small>
           </div>
         )}
         <Button variant="primary" type="submit" className="mt-2">

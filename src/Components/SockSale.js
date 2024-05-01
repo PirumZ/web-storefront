@@ -5,6 +5,7 @@ export default function SockSale(props) {
   return (
     // Pretty basic component designating the layout of all of the sale socks
     // utilizes props to import data from JSONs
+    // we decided to leave the button out since it would be annoying to iterate through another JSON
     <div className="sock">
       <div className="image">
         <img src={props.image} alt="It's socks" className="center"></img>

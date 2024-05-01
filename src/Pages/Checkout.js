@@ -1,16 +1,10 @@
-import Container from "react-bootstrap/Container";
 import CheckoutForm from "../Components/CheckoutForm";
 export default function CheckoutPage() {
 
   return (
-    <div>
-    <Container fluid="lg" className="mt-4">
-
-    </Container>
-    <div/* Will call the checkout form to determine total */>
+    <div/* Will call the checkout form to determine total and generate the invoice */>
       <h2>Checkout</h2>
       <CheckoutForm />
-    </div>
     </div>
   );
 }

@@ -11,7 +11,7 @@ export default function NavigationBar() {
     <Navbar bg="dark" variant="dark" expand="lg" sticky="top">
       <Container fluid>
         <LinkContainer to="/">
-          <Navbar.Brand>Just Socks, That's It (*Cough* Pants too *Cough*)</Navbar.Brand>
+          <Navbar.Brand>Just Socks, No Pants</Navbar.Brand>
         </LinkContainer>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

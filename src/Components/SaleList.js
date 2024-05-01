@@ -14,7 +14,7 @@ export default function SaleList() {
     // More specifically, this was designed for the socks on sale on the landing page
     <div className="sock-list">
       <Container className="mt-4">
-        <Row lg={4} md={3} className="justify-content-center">
+        <Row lg={4} md={8} className="justify-content-center">
           {socksale.map((socksale) => (
             <SockSale
               key={socksale.id}
